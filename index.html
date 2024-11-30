@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Beautiful Navbar</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark custom-navbar">
+      <div class="container">
+        <!-- Logo hiển thị rõ ràng hơn -->
+        <a class="navbar-brand" href="./index.html">
+          <img src="./image/meowww.png" alt="Shop Meowww" class="brand-logo" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a
+                class="nav-link active fw-bold text-black"
+                aria-current="page"
+                href="./index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-bold" href="./comboday.html"
+                >Combo Mỗi Ngày</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-bold" href="./allcombo.html"
+                >Tất Cả Combo</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-bold" href="./upbtc23.html"
+                >Dịch Vụ Up Bông Tai</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-bold" href="./lienhe.html">Liên Hệ</a>
+            </li>
+            <li class="nav-item">
+              <a class="btn btn-custom" href="./troll.html">Sign Up</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- banner image -->
+    <section class="welcome-section">
+      <h1 class="shop-title">Welcome <span>Shop Meowww</span>!</h1>
+      <p class="highlight">
+        ✨ Khám phá ngay những gói <strong>Combo Ưu Đãi Siêu Hot</strong> đang
+        chờ bạn bên dưới! 😻
+      </p>
+    </section>
+
+    <!-- menu -->
+
+    <div class="container py-5">
+      <h2 class="text-center mb-4 all-items-title">All Items</h2>
+
+      <div class="row g-4">
+        <!-- Loop to create 20 product cards -->
+        <!-- Example Card -->
+        <!-- 1 -->
+        <div class="col-md-4 col-lg-3">
+          <div class="card h-100">
+            <a href="./detail/detailMhbt.html"
+              ><img
+                src="./image/mhbt.jpg"
+                class="card-img-top"
+                alt="Product Image"
+            /></a>
+
+            <div class="card-body text-center">
+              <h5 class="card-title">
+                <span class="luxury-price"> Mảnh hồn bông tai</span>
+              </h5>
+              <p class="card-text text-muted">Mở chỉ số bông tai cấp 2, 3, 4</p>
+
+              <div class="price-container">
+                <span class="new-price">$29.99</span>
+                <div class="old-price-container">
+                  <span class="old-price">$39.99</span>
+                  <span class="discount">-25%</span>
+                </div>
+              </div>
+
+              <a href="./detail/detailMhbt.html" class="btn btn-primary"
+                >Click Em Đi Anh!</a
+              >
+            </div>
+          </div>
+        </div>
+        <!-- Duplicate the card above 19 more times, updating the title and image -->
+        <!-- Replace 'Product 1' with 'Product 2', 'Product 3', ..., 'Product 20' -->
+        <!-- Example: -->
+        <!-- 2 -->
+        <div class="col-md-4 col-lg-3">
+          <div class="card h-100">
+            <a href="./detail.html"
+              ><img
+                src="./image/cn.jpg"
+                class="card-img-top"
+                alt="Product Image"
+            /></a>
+
+            <div class="card-body text-center">
+              <h5 class="card-title">
+                <span class="luxury-price"> Cuồng Nộ</span>
+              </h5>
+              <p class="card-text text-muted">x100 Cuồng nộ</p>
+
+              <div class="price-container">
+                <span class="new-price">$25.99</span>
+                <div class="old-price-container">
+                  <span class="old-price">$35.99</span>
+                  <span class="discount">-25%</span>
+                </div>
+              </div>
+
+              <a href="./detail.html" class="btn btn-primary"
+                >Click Em Đi Anh!</a
+              >
+            </div>
+          </div>
+        </div>
+        <!-- Continue adding products -->
+        <!-- 3 -->
+        <div class="col-md-4 col-lg-3">
+          <div class="card h-100">
+            <a href="./detail.html"
+              ><img
+                src="./image/mhbt.jpg"
+                class="card-img-top"
+                alt="Product Image"
+            /></a>
+
+            <div class="card-body text-center">
+              <h5 class="card-title">
+                <span class="luxury-price"> Mảnh hồn bông tai</span>
+              </h5>
+              <p class="card-text text-muted">Mở chỉ số bông tai cấp 2, 3, 4</p>
+
+              <div class="price-container">
+                <span class="new-price">$29.99</span>
+                <div class="old-price-container">
+                  <span class="old-price">$39.99</span>
+                  <span class="discount">-25%</span>
+                </div>
+              </div>
+
+              <a href="./detail.html" class="btn btn-primary"
+                >Click Em Đi Anh!</a
+              >
+            </div>
+          </div>
+        </div>
+        <!-- 4 -->
+        <div class="col-md-4 col-lg-3">
+          <div class="card h-100">
+            <a href="./detail.html"
+              ><img
+                src="./image/mhbt.jpg"
+                class="card-img-top"
+                alt="Product Image"
+            /></a>
+
+            <div class="card-body text-center">
+              <h5 class="card-title">
+                <span class="luxury-price"> Mảnh hồn bông tai</span>
+              </h5>
+              <p class="card-text text-muted">Mở chỉ số bông tai cấp 2, 3, 4</p>
+
+              <div class="price-container">
+                <span class="new-price">$29.99</span>
+                <div class="old-price-container">
+                  <span class="old-price">$39.99</span>
+                  <span class="discount">-25%</span>
+                </div>
+              </div>
+
+              <a href="./detail.html" class="btn btn-primary"
+                >Click Em Đi Anh!</a
+              >
+            </div>
+          </div>
+        </div>
+        <!-- 5 -->
+        <div class="col-md-4 col-lg-3">
+          <div class="card h-100">
+            <a href="./detail.html"
+              ><img
+                src="./image/mhbt.jpg"
+                class="card-img-top"
+                alt="Product Image"
+            /></a>
+
+            <div class="card-body text-center">
+              <h5 class="card-title">
+                <span class="luxury-price"> Mảnh hồn bông tai</span>
+              </h5>
+              <p class="card-text text-muted">Mở chỉ số bông tai cấp 2, 3, 4</p>
+
+              <div class="price-container">
+                <span class="new-price">$29.99</span>
+                <div class="old-price-container">
+                  <span class="old-price">$39.99</span>
+                  <span class="discount">-25%</span>
+                </div>
+              </div>
+
+              <a href="./detail.html" class="btn btn-primary"
+                >Click Em Đi Anh!</a
+              >
+            </div>
+          </div>
+        </div>
+        <!-- 6 -->
+        <div class="col-md-4 col-lg-3">
+          <div class="card h-100">
+            <a href="./detail.html"
+              ><img
+                src="./image/mhbt.jpg"
+                class="card-img-top"
+                alt="Product Image"
+            /></a>
+
+            <div class="card-body text-center">
+              <h5 class="card-title">
+                <span class="luxury-price"> Mảnh hồn bông tai</span>
+              </h5>
+              <p class="card-text text-muted">Mở chỉ số bông tai cấp 2, 3, 4</p>
+
+              <div class="price-container">
+                <span class="new-price">$29.99</span>
+                <div class="old-price-container">
+                  <span class="old-price">$39.99</span>
+                  <span class="discount">-25%</span>
+                </div>
+              </div>
+
+              <a href="./detail.html" class="btn btn-primary"
+                >Click Em Đi Anh!</a
+              >
+            </div>
+          </div>
+        </div>
+        <!-- 7 -->
+        <div class="col-md-4 col-lg-3">
+          <div class="card h-100">
+            <a href="./detail.html"
+              ><img
+                src="./image/mhbt.jpg"
+                class="card-img-top"
+                alt="Product Image"
+            /></a>
+
+            <div class="card-body text-center">
+              <h5 class="card-title">
+                <span class="luxury-price"> Mảnh hồn bông tai</span>
+              </h5>
+              <p class="card-text text-muted">Mở chỉ số bông tai cấp 2, 3, 4</p>
+
+              <div class="price-container">
+                <span class="new-price">$29.99</span>
+                <div class="old-price-container">
+                  <span class="old-price">$39.99</span>
+                  <span class="discount">-25%</span>
+                </div>
+              </div>
+
+              <a href="./detail.html" class="btn btn-primary"
+                >Click Em Đi Anh!</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <!-- Footer -->
+    <footer class="footer mt-auto py-4">
+      <div class="container">
+        <div class="row text-center text-md-start">
+          <!-- Logo & Description -->
+          <div class="col-md-4 mb-4">
+            <!-- Thêm Logo Hình ảnh -->
+            <div class="footer-logo">
+              <img
+                src="./image/meowww.png"
+                alt="MyBrand Logo"
+                class="footer-logo-img"
+              />
+            </div>
+            <p class="highlighted-text">
+              "Chắc chắn bạn sẽ yêu Shop Meowww – Giá rẻ, quà tặng nhiều,
+              shopping thỏa thích!"
+            </p>
+          </div>
+          <!-- Links -->
+          <div class="col-md-4 mb-4">
+            <h5 class="text-white fw-bold">Quick Links</h5>
+            <ul class="list-unstyled">
+              <li><a href="./index.html" class="footer-link">Home</a></li>
+              <li>
+                <a href="./comboday.html" class="footer-link">Combo Mỗi Ngày</a>
+              </li>
+              <li>
+                <a href="./allcombo.html" class="footer-link">Tất Cả Combo</a>
+              </li>
+              <li>
+                <a href="./upbtc23.html" class="footer-link"
+                  >Dịch Vụ Up Bông Tai</a
+                >
+              </li>
+              <li><a href="./lienhe.html" class="footer-link">Liên Hệ</a></li>
+            </ul>
+          </div>
+          <!-- Social Media -->
+          <div class="col-md-4">
+            <h5 class="text-white fw-bold">Follow Us</h5>
+            <div class="d-flex justify-content-center justify-content-md-start">
+              <a href="#" class="btn btn-custom me-2"
+                ><i class="bi bi-facebook"></i
+              ></a>
+              <a href="#" class="btn btn-custom me-2"
+                ><i class="bi bi-twitter"></i
+              ></a>
+              <a href="#" class="btn btn-custom"
+                ><i class="bi bi-instagram"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <hr class="text-white-50" />
+        <p class="text-center text-white mb-0">
+          &copy; Nro JUN MÃI ĐỈNH MÃI ĐỈNH LUÔN.
+        </p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

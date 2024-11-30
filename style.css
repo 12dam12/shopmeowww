@@ -1,0 +1,686 @@
+.footer {
+  background: linear-gradient(
+    90deg,
+    #ff69b4,
+    #ffd700
+  ); /* Hồng (#ff69b4) và vàng (#ffd700) */
+  color: #fff;
+}
+
+/* Định dạng logo MyBrand trong footer */
+.footer-logo {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.footer-logo-img {
+  width: 100px; /* Kích thước logo */
+  height: auto; /* Để giữ tỉ lệ hình ảnh */
+  border-radius: 50%; /* Làm tròn logo */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Thêm bóng đổ nhẹ */
+  transition: transform 0.3s ease-in-out; /* Hiệu ứng zoom khi hover */
+}
+
+.footer-logo-img:hover {
+  transform: scale(1.1); /* Phóng to logo khi hover */
+}
+
+/* Định dạng footer links */
+.footer-link {
+  color: #bbb; /* Màu sắc cho các liên kết trong footer */
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  color: #fff; /* Màu khi hover */
+  text-decoration: underline;
+}
+
+/* Định dạng cho các nút mạng xã hội */
+.btn-custom {
+  background-color: #007bff; /* Màu nền cho nút mạng xã hội */
+  color: #fff; /* Màu chữ */
+  border: none; /* Không viền */
+  border-radius: 50%; /* Làm tròn nút */
+  padding: 10px;
+  font-size: 1.5rem; /* Kích thước icon */
+  transition: background-color 0.3s ease-in-out; /* Hiệu ứng chuyển màu khi hover */
+}
+
+.btn-custom:hover {
+  background-color: #0056b3; /* Màu khi hover */
+}
+
+/* Định dạng footer chung */
+.footer {
+  background-color: #343a40; /* Màu nền footer */
+  color: #ffffff; /* Màu chữ */
+  padding: 40px 0; /* Khoảng cách trên và dưới */
+}
+
+.card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.btn-primary {
+  background-color: #1e3c72;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #2a5298;
+}
+/* Tùy chỉnh nút Sign Up */
+.btn-custom {
+  background-color: #ff6f61;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+}
+
+.btn-custom:hover {
+  background-color: #ff4c3b;
+  color: #fff;
+}
+
+/* Khoảng cách giữa các mục navbar */
+.navbar-nav .nav-item {
+  margin-left: 10px;
+}
+
+/* Thêm padding cho responsive */
+.navbar {
+  padding: 1rem 0;
+}
+/* rebonsive banner */
+.banner {
+  background-image: url("your-image-url.jpg"); /* Đặt hình nền */
+  background-size: cover;
+  background-position: center;
+  height: 50vh; /* Chiều cao banner chiếm 50% màn hình */
+  min-height: 400px; /* Đảm bảo không quá thấp */
+  width: 100%; /* Full chiều rộng */
+}
+@media (max-width: 768px) {
+  .banner {
+    height: 30vh; /* Giảm chiều cao trên thiết bị nhỏ */
+    min-height: 200px;
+  }
+}
+/* chỉnh lại chữ*/
+/* Toàn bộ phần banner */
+.welcome-section {
+  text-align: center;
+  background-color: #fce4ec; /* Màu nền nhẹ nhàng */
+  padding: 60px 20px;
+  animation: fadeIn 2s ease-in-out;
+}
+
+/* Tiêu đề chính */
+.shop-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #ff4081; /* Hồng nổi bật */
+  margin-bottom: 20px;
+  font-family: "Arial", sans-serif;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.shop-title span {
+  color: #ff6f00; /* Cam sáng */
+  font-style: italic;
+}
+
+/* Nội dung mô tả */
+.highlight {
+  font-size: 1.4rem;
+  color: #333; /* Màu chữ đậm dễ đọc */
+  font-family: "Verdana", sans-serif;
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+/* Từ quan trọng */
+.highlight strong {
+  color: #e91e63; /* Hồng đậm */
+  font-weight: bold;
+}
+
+/* Hiệu ứng fade-in */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* banner hình */
+/* Phần banner với hình nền */
+.welcome-section {
+  text-align: center;
+  background-image: url("./image/meowww.png"); /* Thay bằng URL ảnh của bạn */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: transparent; /* Màu nền trong suốt */
+  padding: 100px 20px;
+  position: relative;
+  color: rgba(255, 255, 255, 0.8); /* Chữ màu trắng với độ trong suốt */
+  animation: fadeIn 2s ease-in-out;
+  opacity: 0.9; /* Điều chỉnh độ trong suốt toàn bộ */
+}
+
+/* Nội dung bên trong */
+.welcome-section h1,
+.welcome-section p {
+  position: relative;
+  z-index: 2;
+}
+
+/* Tiêu đề chính */
+.shop-title {
+  font-size: 2.8rem;
+  font-weight: bold;
+  color: #ffeb3b; /* Vàng sáng */
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+  margin-bottom: 20px;
+}
+
+.shop-title span {
+  color: #ff9800; /* Cam nổi bật */
+  font-style: italic;
+}
+
+/* Nội dung mô tả */
+.highlight {
+  font-size: 1.4rem;
+  color: #fff; /* Màu trắng */
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+/* Từ quan trọng */
+.highlight strong {
+  color: #ffeb3b; /* Vàng sáng */
+  font-weight: bold;
+}
+
+/* Hiệu ứng fade-in */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* brand */
+/* Tùy chỉnh navbar */
+.custom-navbar {
+  padding: 20px 0; /* Tăng khoảng cách trên dưới */
+  min-height: 100px; /* Đảm bảo chiều cao lớn hơn mặc định */
+}
+
+/* Định dạng logo */
+.brand-logo {
+  height: 80px; /* Tăng chiều cao logo */
+  width: auto; /* Giữ tỷ lệ hình ảnh */
+  transition: transform 0.3s ease; /* Hiệu ứng hover */
+}
+
+.brand-logo:hover {
+  transform: scale(1.1); /* Phóng to nhẹ khi hover */
+}
+
+/* Định dạng liên kết */
+.navbar-nav .nav-link {
+  font-size: 1rem; /* Phông chữ dễ đọc */
+  margin-left: 15px;
+  color: #fff;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #ffeb3b; /* Đổi màu khi hover */
+}
+
+/* Nút Sign Up */
+.btn-custom {
+  background-color: #ff4081;
+  color: #fff;
+  border-radius: 20px;
+  padding: 8px 16px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btn-custom:hover {
+  background-color: #e91e63;
+}
+/* .. */
+/* Custom CSS for Navbar */
+.navbar {
+  background: linear-gradient(
+    90deg,
+    #ff69b4,
+    #ffd700
+  ); /* Hồng (#ff69b4) và vàng (#ffd700) */
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+}
+.navbar-nav .nav-link {
+  color: #ddd;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+.navbar-nav .nav-link:hover {
+  color: #fff;
+}
+.nav-item .active {
+  color: #f39c12 !important;
+}
+.btn-custom {
+  background-color: #f39c12;
+  color: #fff;
+  border-radius: 20px;
+  padding: 5px 15px;
+  transition: background-color 0.3s ease;
+}
+.btn-custom:hover {
+  background-color: #d35400;
+}
+/* banner */
+.banner {
+  background: linear-gradient(to right, #1f4037, #99f2c8);
+  color: white;
+  padding: 60px 30px;
+  text-align: center;
+}
+.banner h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.banner p {
+  font-size: 1.5rem;
+  margin: 20px 0;
+}
+.banner .btn {
+  padding: 10px 30px;
+  font-size: 1.2rem;
+  border-radius: 30px;
+}
+/* ... */
+/* Custom CSS */
+body {
+  font-family: "Arial", sans-serif;
+}
+
+.product-detail {
+  padding: 80px 0;
+}
+
+/* Product Image */
+.product-img {
+  max-width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+}
+.product-img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+}
+
+/* Product Info */
+.product-info h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+  transition: color 0.3s ease;
+}
+.product-info h1:hover {
+  color: #ff4081;
+}
+
+.price {
+  font-size: 2rem;
+  color: #e91e63;
+  margin: 10px 0;
+}
+
+.product-info p {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.product-info ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.product-info ul li {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.btn-buy {
+  background-color: #ff4081;
+  color: white;
+  border-radius: 30px;
+  padding: 12px 30px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.btn-buy:hover {
+  background-color: #e91e63;
+  transform: translateY(-3px);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .product-img {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+  .product-info h1 {
+    font-size: 2rem;
+  }
+  .price {
+    font-size: 1.5rem;
+  }
+  .product-info p {
+    font-size: 1rem;
+  }
+  .btn-buy {
+    font-size: 1.1rem;
+    padding: 10px 25px;
+  }
+}
+/*  img*/
+.product-img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+}
+.product-info h1:hover {
+  color: #ff4081;
+}
+.btn-buy:hover {
+  background-color: #e91e63;
+  transform: translateY(-3px);
+}
+/* chứ detail */
+.product-description {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #444;
+  margin-bottom: 20px;
+  text-align: justify; /* Canh đều hai bên */
+  font-family: "Arial", sans-serif;
+  position: relative;
+}
+
+.product-description strong {
+  color: #e91e63; /* Màu nổi bật cho phần chữ "1000 Mảnh hồn bông tai" */
+  font-weight: bold;
+}
+
+.product-description::after {
+  content: " ✦"; /* Dấu "✦" sẽ thêm sau văn bản */
+  font-size: 1.5rem;
+  color: #ff4081; /* Màu cho dấu chấm trang trí */
+  animation: pulse 2s infinite ease-in-out; /* Hiệu ứng nhấp nháy nhẹ nhàng hơn */
+  display: inline-block; /* Đảm bảo dấu nằm ngay sau văn bản */
+  vertical-align: middle; /* Đảm bảo dấu và văn bản căn chỉnh theo chiều dọc */
+}
+
+/* Hiệu ứng nhấp nháy cho dấu chấm */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.7; /* Giảm độ mờ ở giữa chu kỳ */
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+/* hiện chữ từ từ */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+.welcome-section {
+  text-align: center;
+  padding: 50px;
+  background-color: #fff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  width: 80%;
+  border-radius: 10px;
+}
+.shop-title {
+  font-size: 2rem;
+  color: gold; /* Thay đổi thành màu vàng */
+  opacity: 0; /* Bắt đầu ẩn */
+  animation: fadeIn 3s ease-in forwards; /* Kích hoạt hoạt ảnh */
+}
+.highlight {
+  font-size: 1.2rem;
+  margin-top: 20px;
+  color: #ffd700; /* Thay đổi thành màu vàng */
+  opacity: 0; /* Bắt đầu ẩn */
+  animation: fadeIn 3s ease-in forwards; /* Kích hoạt hoạt ảnh */
+  animation-delay: 1s; /* Chậm hơn phần tiêu đề */
+}
+strong {
+  color: #ff4500;
+}
+.shop-title span {
+  color: #ff69b4;
+  font-weight: bold;
+}
+
+/* Keyframes cho hiệu ứng mờ dần */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/* all item */
+.all-items-title {
+  font-size: 2.5rem; /* Kích thước chữ lớn hơn */
+  font-weight: bold; /* Làm đậm chữ */
+  text-transform: uppercase; /* Viết hoa toàn bộ */
+  color: #ffa500; /* Màu cam nổi bật */
+  letter-spacing: 2px; /* Khoảng cách giữa các chữ */
+  position: relative; /* Để thêm hiệu ứng với ::after */
+  padding-bottom: 10px; /* Khoảng cách dưới */
+}
+
+.all-items-title::after {
+  content: ""; /* Dòng trang trí bên dưới */
+  display: block;
+  width: 80px; /* Độ dài của dòng */
+  height: 4px; /* Độ dày của dòng */
+  background-color: #ffa500; /* Cùng màu với tiêu đề */
+  margin: 8px auto 0; /* Căn giữa dòng */
+}
+
+.all-items-title:hover {
+  color: #ff6347; /* Đổi màu khi hover */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Hiệu ứng bóng chữ */
+}
+
+.all-items-title::after:hover {
+  background-color: #ff6347; /* Đổi màu dòng khi hover */
+}
+/* css đã vàoo đây còn ngại gì nữa */
+/* Định dạng cho tiêu đề "Đã vào tới đây rồi thì mua đi mà ngại gì nữa" */
+.special-message {
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-align: center;
+  color: #ff6347; /* Màu cam nổi bật */
+  text-transform: uppercase; /* Chữ viết hoa */
+  letter-spacing: 3px; /* Khoảng cách giữa các chữ */
+  margin-bottom: 30px;
+  animation: fadeIn 2s ease-in-out;
+  position: relative;
+}
+
+.special-message::after {
+  content: "";
+  display: block;
+  width: 60px; /* Độ dài của đường kẻ */
+  height: 4px;
+  background-color: #ff6347; /* Cùng màu với tiêu đề */
+  margin: 10px auto 0;
+}
+
+/* Hiệu ứng làm cho câu chữ xuất hiện từ từ */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* hình mèo */
+/* Định dạng cho hình ảnh mèo dễ thương */
+.cat-image {
+  text-align: center;
+  margin-top: 20px; /* Khoảng cách trên hình ảnh */
+  opacity: 0; /* Khởi tạo với trạng thái ẩn */
+  animation: fadeInCat 2s ease-in-out forwards; /* Áp dụng animation */
+}
+
+.cat-image img {
+  width: 150px; /* Kích thước hình ảnh mèo */
+  height: auto; /* Để tỉ lệ hình ảnh được bảo toàn */
+  border-radius: 50%; /* Làm tròn hình ảnh */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Thêm bóng đổ nhẹ cho hình ảnh */
+  transition: transform 0.3s ease-in-out;
+}
+
+.cat-image img:hover {
+  transform: scale(1.1); /* Hiệu ứng phóng to khi hover */
+}
+
+/* Animation cho hình ảnh mèo */
+@keyframes fadeInCat {
+  0% {
+    opacity: 0;
+    transform: translateY(20px); /* Đẩy hình ảnh xuống khi bắt đầu */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0); /* Quay lại vị trí ban đầu */
+  }
+}
+/* Định dạng câu văn nổi bật với font chữ đẹp */
+.highlighted-text {
+  font-family: "Poppins", sans-serif; /* Sử dụng font chữ Poppins đẹp và hiện đại */
+  font-size: 1.5rem; /* Kích thước chữ lớn hơn để dễ nhìn */
+  font-weight: 600; /* Độ đậm vừa phải, không quá nặng */
+  color: #fff; /* Màu chữ trắng để nổi bật trên nền */
+  text-align: center; /* Căn giữa văn bản */
+  padding: 15px 30px; /* Khoảng cách xung quanh chữ */
+  background: linear-gradient(
+    135deg,
+    #f39c12,
+    #e74c3c
+  ); /* Nền gradient với màu vàng và đỏ */
+  border-radius: 50px; /* Viền bo tròn để tạo cảm giác mềm mại */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15); /* Bóng đổ nhẹ để văn bản nổi bật */
+  transform: scale(1.05); /* Phóng to văn bản nhẹ khi hover */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Hiệu ứng chuyển động khi hover */
+  letter-spacing: 1px; /* Khoảng cách chữ để tạo cảm giác thoáng đãng */
+  text-transform: uppercase; /* Chữ hoa giúp câu văn thêm phần mạnh mẽ */
+}
+
+.highlighted-text:hover {
+  transform: scale(1.1); /* Phóng to khi hover */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Bóng đổ đậm hơn khi hover */
+}
+
+/* Container chứa giá */
+.price-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+}
+
+/* Container cho giá cũ và phần giảm giá nằm trên cùng một hàng */
+.old-price-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+/* Giá cũ */
+.old-price {
+  color: #d9534f; /* Màu đỏ */
+  text-decoration: line-through; /* Gạch ngang */
+  font-size: 0.8rem; /* Kích thước chữ nhỏ hơn gấp đôi */
+  margin-right: 10px; /* Khoảng cách giữa giá cũ và phần giảm giá */
+}
+
+/* Phần giảm giá 25% */
+.discount {
+  color: #ff5722; /* Màu cam */
+  font-size: 0.8rem; /* Kích thước chữ nhỏ hơn gấp đôi */
+  font-weight: bold;
+  background-color: #fff3e0; /* Nền màu sáng */
+  padding: 5px 15px;
+  border-radius: 20px;
+}
+
+/* Giá mới (khuyến mãi) */
+.new-price {
+  color: #28a745; /* Màu xanh lá */
+  font-size: 1.5rem;
+  font-weight: bold;
+  background-color: #f8f9fa;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
