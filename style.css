@@ -75,12 +75,14 @@
 }
 
 .btn-primary {
-  background-color: #1e3c72;
+  background-color: #dc95dd;
   border: none;
+
+  font-weight: bold;
 }
 
 .btn-primary:hover {
-  background-color: #2a5298;
+  background-color: blue;
 }
 /* Tùy chỉnh nút Sign Up */
 .btn-custom {
@@ -147,7 +149,7 @@
 /* Nội dung mô tả */
 .highlight {
   font-size: 1.4rem;
-  color: #333; /* Màu chữ đậm dễ đọc */
+  color: #ff7f50; /* Màu chữ đậm dễ đọc */
   font-family: "Verdana", sans-serif;
   margin: 0 auto;
   max-width: 600px;
@@ -155,7 +157,7 @@
 
 /* Từ quan trọng */
 .highlight strong {
-  color: #e91e63; /* Hồng đậm */
+  color: #ff7f50; /* Hồng đậm */
   font-weight: bold;
 }
 
@@ -174,7 +176,7 @@
 /* Phần banner với hình nền */
 .welcome-section {
   text-align: center;
-  background-image: url("./image/meowww.png"); /* Thay bằng URL ảnh của bạn */
+  background-image: url("./image/anhbroly.jpg"); /* Thay bằng URL ảnh của bạn */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -334,7 +336,7 @@
 /* ... */
 /* Custom CSS */
 body {
-  font-family: "Arial", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .product-detail {
@@ -477,7 +479,7 @@ body {
 }
 /* hiện chữ từ từ */
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
   margin: 0;
   padding: 0;
   background-color: #f9f9f9;
@@ -706,7 +708,7 @@ strong {
   height: 0;
   border-left: 20px solid transparent;
   border-right: 20px solid transparent;
-  border-top: 20px solid #007bff;
+  border-top: 20px solid pink;
   margin: 0 auto;
   animation: bounce 1s infinite;
 }
@@ -719,4 +721,18 @@ strong {
   50% {
     transform: translateY(10px);
   }
+}
+/* backgr card */
+
+/*  */
+/* Default card styles */
+.custom-card {
+  background-color: #fff7d9; /* Màu hồng dễ thương */
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover styles */
+.custom-card:hover {
+  background-color: pink; /* Màu vàng khi hover */
+  transform: scale(1.05); /* Tăng kích thước nhẹ khi hover */
 }
