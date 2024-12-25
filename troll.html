@@ -3,9 +3,58 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Responsive Text Marquee</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      .marquee-container {
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        width: 100vw; /* Đảm bảo chiều rộng chiếm toàn bộ màn hình */
+        overflow: hidden;
+        background: rgba(255, 255, 255, 0.7); /* Nền trắng mờ */
+        white-space: nowrap;
+        z-index: 9999; /* Đảm bảo luôn hiển thị trên các thành phần khác */
+      }
+      .marquee-text {
+        display: inline-block;
+        font-size: 1rem; /* Kích thước chữ cho mobile */
+        animation: marquee 15s linear infinite;
+        color: #ff77ff; /* Màu vàng hồng */
+      }
+      @keyframes marquee {
+        from {
+          transform: translateX(
+            100vw
+          ); /* Bắt đầu từ ngoài khung nhìn bên phải */
+        }
+        to {
+          transform: translateX(-100%); /* Kết thúc ngoài khung nhìn bên trái */
+        }
+      }
+
+      /* Tăng kích thước chữ trên các thiết bị lớn hơn */
+      @media (min-width: 768px) {
+        .marquee-text {
+          font-size: 1.25rem; /* Kích thước chữ cho tablet */
+        }
+      }
+      @media (min-width: 1024px) {
+        .marquee-text {
+          font-size: 1.5rem; /* Kích thước chữ cho desktop */
+        }
+      }
+    </style>
   </head>
   <body>
-    ở đây có shop meowww dễ thương nè!!!
+    <div class="marquee-container">
+      <span class="marquee-text fw-bold"
+        >Cảm Ơn Bạn Đã Ghé Đến ShopMeowww Có Thắc Mắc Gì Về Game Cứ Inbox Với
+        Shop, SHOP MEOWWW Có Bán Vàng 10k = 100tv.</span
+      >
+    </div>
   </body>
 </html>

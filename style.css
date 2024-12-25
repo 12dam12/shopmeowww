@@ -553,27 +553,6 @@ strong {
   background-color: #ff6347; /* Đổi màu dòng khi hover */
 }
 /* css đã vàoo đây còn ngại gì nữa */
-/* Định dạng cho tiêu đề "Đã vào tới đây rồi thì mua đi mà ngại gì nữa" */
-.special-message {
-  font-size: 1.8rem;
-  font-weight: bold;
-  text-align: center;
-  color: #ff6347; /* Màu cam nổi bật */
-  text-transform: uppercase; /* Chữ viết hoa */
-  letter-spacing: 3px; /* Khoảng cách giữa các chữ */
-  margin-bottom: 30px;
-  animation: fadeIn 2s ease-in-out;
-  position: relative;
-}
-
-.special-message::after {
-  content: "";
-  display: block;
-  width: 60px; /* Độ dài của đường kẻ */
-  height: 4px;
-  background-color: #ff6347; /* Cùng màu với tiêu đề */
-  margin: 10px auto 0;
-}
 
 /* Hiệu ứng làm cho câu chữ xuất hiện từ từ */
 @keyframes fadeIn {
@@ -735,4 +714,41 @@ strong {
 .custom-card:hover {
   background-color: pink; /* Màu vàng khi hover */
   transform: scale(1.05); /* Tăng kích thước nhẹ khi hover */
+}
+/* chữ chạy */
+.marquee-container {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 100vw; /* Đảm bảo chiều rộng chiếm toàn bộ màn hình */
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.7); /* Nền trắng mờ */
+  white-space: nowrap;
+  z-index: 9999; /* Đảm bảo luôn hiển thị trên các thành phần khác */
+}
+.marquee-text {
+  display: inline-block;
+  font-size: 1rem; /* Kích thước chữ cho mobile */
+  animation: marquee 15s linear infinite;
+  color: #ff77ff; /* Màu vàng hồng */
+}
+@keyframes marquee {
+  from {
+    transform: translateX(100vw); /* Bắt đầu từ ngoài khung nhìn bên phải */
+  }
+  to {
+    transform: translateX(-100%); /* Kết thúc ngoài khung nhìn bên trái */
+  }
+}
+
+/* Tăng kích thước chữ trên các thiết bị lớn hơn */
+@media (min-width: 768px) {
+  .marquee-text {
+    font-size: 1.25rem; /* Kích thước chữ cho tablet */
+  }
+}
+@media (min-width: 1024px) {
+  .marquee-text {
+    font-size: 1.5rem; /* Kích thước chữ cho desktop */
+  }
 }
