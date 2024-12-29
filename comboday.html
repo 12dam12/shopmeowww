@@ -3,96 +3,68 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Weekly Combos</title>
+    <title>Combo Ngày</title>
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@300;500&display=swap"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
     <style>
       body {
-        font-family: "Poppins", sans-serif;
-        background-color: #f3f3f3;
+        font-family: "Arial", sans-serif;
+        background: linear-gradient(135deg, #ffe9e9, #fff4d4);
         color: #333;
       }
-
-      h1 {
-        font-family: "Roboto", sans-serif;
-        font-weight: 600;
-        font-size: 2.5rem;
-        color: #007bff;
-      }
-
-      .day-section {
-        margin-bottom: 20px;
-        padding: 20px;
-        border: 1px solid #ccc;
-        border-radius: 10px;
-        background: linear-gradient(145deg, #ffffff, #f0f0f0);
-        box-shadow: 5px 5px 10px #d9d9d9, -5px -5px 10px #ffffff;
-        transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-      }
-
-      .day-section:hover {
-        transform: scale(1.03);
-        box-shadow: 10px 10px 20px #d0d0d0, -10px -10px 20px #ffffff;
-      }
-
-      .day-section img {
-        max-width: 100%;
-        height: auto;
-        border-radius: 10px;
-        margin-bottom: 15px;
-        transition: transform 0.3s ease-in-out;
-      }
-
-      .day-section img:hover {
-        transform: scale(1.05);
-      }
-
-      .day-section h3 {
-        font-weight: 600;
-        font-size: 1.5rem;
-        color: #333;
-        margin-bottom: 10px;
-        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
-      }
-
-      .day-section p {
-        font-weight: 400;
-        font-size: 1rem;
-        margin-bottom: 15px;
-        color: #555;
-      }
-
-      .btn-buy {
-        font-family: "Roboto", sans-serif;
-        font-weight: 500;
-        font-size: 1rem;
-        padding: 10px 20px;
-        background-color: #007bff;
-        color: white;
+      .combo-card {
         border: none;
-        border-radius: 5px;
-        box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);
-        transition: background-color 0.3s ease, box-shadow 0.3s ease,
-          transform 0.2s ease-in-out;
+        background: #fff6f9;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
       }
-
-      .btn-buy:hover {
-        background-color: #0056b3;
-        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
-        transform: scale(1.05);
+      .combo-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      }
+      .combo-card img {
+        border-radius: 10px;
+        transition: transform 0.3s ease;
+      }
+      .combo-card img:hover {
+        transform: scale(1.1);
+      }
+      .combo-header {
+        text-align: center;
+        margin-bottom: 2rem;
+        color: #d63384;
+      }
+      .btn-custom {
+        background: #ffd700;
+        color: #fff;
+        border: none;
+      }
+      .btn-custom:hover {
+        background: #ffa500;
       }
     </style>
   </head>
   <body>
-    <!--  -->
-    <!-- Navbar -->
+     <!-- Navbar -->
+     <div class="marquee-container">
+      <span class="marquee-text fw-bold"
+        >Cảm Ơn Bạn Đã Ghé Đến Shop Meowww -> Shop Meowww Có Bán Vàng 10k = 100tv. Có Thắc Mắc Gì Về Game Cứ Inbox Với Shop. Shop Meowww Cảm Ơn Nhiều Nè Tim Tim Tim.<i class="fa fa-heart" aria-hidden="true"></i>
+        <i class="fa fa-heart" aria-hidden="true"></i>
+        <i class="fa fa-heart" aria-hidden="true"></i>
+
+      >
+    </div>  
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark custom-navbar">
       <div class="container">
         <!-- Logo hiển thị rõ ràng hơn -->
@@ -145,121 +117,121 @@
         </div>
       </div>
     </nav>
-    <!--  -->
-    <div class="container mt-5">
-      <h1 class="text-center mb-4">Weekly Combos</h1>
-      <div class="row">
-        <!-- Monday -->
-        <div class="col-md-6 day-section">
-          <h3>Monday: Burger Combo</h3>
-          <img src="images/burger.jpg" alt="Burger Combo" />
-          <p>Delicious burger with fries and a drink.</p>
-          <button class="btn btn-buy">Mua Ngay</button>
+    <div class="container py-5">
+      <h1 class="combo-header animate__animated animate__fadeInDown">
+        Combo Ngày Từ Thứ 2 Đến Chủ Nhật
+      </h1>
+      <div class="row g-4">
+        <!-- Combo Card Thứ 2 -->
+        <div class="col-md-4">
+          <div class="card combo-card animate__animated animate__heartBeat">
+            <img
+              src="./image/combot2.png"
+              class="card-img-top"
+              alt="Combo Thứ 2"
+            />
+            <div class="card-body text-center">
+              <h5 class="card-title">Khuyến Mãi Thứ 2</h5>
+              <p class="card-text">500 Cuồng Nộ + 500 Kem Dâu.</p>
+              <a href="https://zalo.me/84338344976" class="btn btn-custom"
+                >10.000đ</a
+              >
+            </div>
+          </div>
         </div>
-        <!-- Tuesday -->
-        <div class="col-md-6 day-section">
-          <h3>Tuesday: Pizza Combo</h3>
-          <img src="images/pizza.jpg" alt="Pizza Combo" />
-          <p>Freshly baked pizza with a soda.</p>
-          <button class="btn btn-buy">Mua Ngay</button>
+        <!-- Combo Card Thứ 3 -->
+        <div class="col-md-4">
+          <div class="card combo-card animate__animated animate__fadeInTopLeft">
+            <img
+              src="./image/1.png"
+              class="card-img-top"
+              alt="Combo Thứ 3"
+            />
+            <div class="card-body text-center">
+              <h5 class="card-title">Khuyến Mãi Thứ 3</h5>
+              <p class="card-text">500 Bổ Huyết + 500 Bánh Pudding.</p>
+              <a href="https://zalo.me/84338344976" class="btn btn-custom">10.000đ</a>
+            </div>
+          </div>
         </div>
-        <!-- Wednesday -->
-        <div class="col-md-6 day-section">
-          <h3>Wednesday: Sushi Combo</h3>
-          <img src="images/sushi.jpg" alt="Sushi Combo" />
-          <p>A selection of fresh sushi and miso soup.</p>
-          <button class="btn btn-buy">Mua Ngay</button>
+        <!-- Combo Card Thứ 4 -->
+        <div class="col-md-4">
+          <div class="card combo-card animate__animated animate__jackInTheBox">
+            <img
+              src="./image/2.png"
+              class="card-img-top"
+              alt="Combo Thứ 4"
+            />
+            <div class="card-body text-center">
+              <h5 class="card-title">Khuyến Mãi Thứ 4</h5>
+              <p class="card-text">Combo Thứ2 + Thứ 3!</p>
+              <a href="https://zalo.me/84338344976" class="btn btn-custom">15.000đ</a>
+            </div>
+          </div>
         </div>
-        <!-- Thursday -->
-        <div class="col-md-6 day-section">
-          <h3>Thursday: Pasta Combo</h3>
-          <img src="images/pasta.jpg" alt="Pasta Combo" />
-          <p>Classic pasta with garlic bread and salad.</p>
-          <button class="btn btn-buy">Mua Ngay</button>
+        <!-- Combo Card Thứ 5 -->
+        <div class="col-md-4">
+          <div class="card combo-card animate__animated animate__rollIn">
+            <img
+              src="./image/btc2.png"
+              class="card-img-top"
+              alt="Combo Thứ 5"
+            />
+            <div class="card-body text-center">
+              <h5 class="card-title">Combo Thứ 5</h5>
+              <p class="card-text">Mua ngay để nhận ưu đãi!</p>
+              <a href="#" class="btn btn-custom">Xem Sản Phẩm</a>
+            </div>
+          </div>
         </div>
-        <!-- Friday -->
-        <div class="col-md-6 day-section">
-          <h3>Friday: Steak Combo</h3>
-          <img src="images/steak.jpg" alt="Steak Combo" />
-          <p>Juicy steak with mashed potatoes and vegetables.</p>
-          <button class="btn btn-buy">Mua Ngay</button>
+        <!-- Combo Card Thứ 6 -->
+        <div class="col-md-4">
+          <div class="card combo-card animate__animated animate__wobble">
+            <img
+              src="./image/sgkvang.png"
+              class="card-img-top"
+              alt="Combo Thứ 6"
+            />
+            <div class="card-body text-center">
+              <h5 class="card-title">Khuyến Mãi Thứ 6</h5>
+              <p class="card-text">Ưu Đãi Vàng!</p>
+              <a href="https://zalo.me/84338344976" class="btn btn-custom">10.000đ</a>
+            </div>
+          </div>
         </div>
-        <!-- Saturday -->
-        <div class="col-md-6 day-section">
-          <h3>Saturday: Taco Combo</h3>
-          <img src="images/taco.jpg" alt="Taco Combo" />
-          <p>Spicy tacos with a side of nachos and dip.</p>
-          <button class="btn btn-buy">Mua Ngay</button>
+        <!-- Combo Card Thứ 7 -->
+        <div class="col-md-4">
+          <div class="card combo-card animate__animated animate__flip">
+            <img
+              src="./image/4.png"
+              class="card-img-top"
+              alt="Combo Thứ 7"
+            />
+            <div class="card-body text-center">
+              <h5 class="card-title">Khuyến Mãi Thứ 7</h5>
+              <p class="card-text">Combo Broly + Skill9.</p>
+              <a href="https://zalo.me/84338344976" class="btn btn-custom">15.000đ</a>
+            </div>
+          </div>
         </div>
-        <!-- Sunday -->
-        <div class="col-md-6 day-section">
-          <h3>Sunday: Ice Cream Combo</h3>
-          <img src="images/icecream.jpg" alt="Ice Cream Combo" />
-          <p>A sweet treat to end the week.</p>
-          <button class="btn btn-buy">Mua Ngay</button>
+        <!-- Combo Card Chủ Nhật -->
+        <div class="col-md-4">
+          <div class="card combo-card animate__animated animate__shakeX">
+            <img
+              src="./image/3.png"
+              class="card-img-top"
+              alt="Combo Chủ Nhật"
+            />
+            <div class="card-body text-center">
+              <h5 class="card-title">Khuyến Mãi Chủ Nhật</h5>
+              <p class="card-text">Combo 5000 Mảnh Hồn Bông Tai.</p>
+              <a href="https://zalo.me/84338344976" class="btn btn-custom">10.000đ</a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-    <!-- Footer -->
-    <footer class="footer mt-auto py-4">
-      <div class="container">
-        <div class="row text-center text-md-start">
-          <!-- Logo & Description -->
-          <div class="col-md-4 mb-4">
-            <!-- Thêm Logo Hình ảnh -->
-            <div class="footer-logo">
-              <img
-                src="./image/meowww.png"
-                alt="MyBrand Logo"
-                class="footer-logo-img"
-              />
-            </div>
-            <p class="highlighted-text">
-              "Chắc chắn bạn sẽ yêu Shop Meowww – Giá rẻ, quà tặng nhiều,
-              shopping thỏa thích!"
-            </p>
-          </div>
-          <!-- Links -->
-          <div class="col-md-4 mb-4">
-            <h5 class="text-white fw-bold">Quick Links</h5>
-            <ul class="list-unstyled">
-              <li><a href="./index.html" class="footer-link">Home</a></li>
-              <li>
-                <a href="./comboday.html" class="footer-link">Combo Mỗi Ngày</a>
-              </li>
-              <li>
-                <a href="./allcombo.html" class="footer-link">Tất Cả Combo</a>
-              </li>
-              <li>
-                <a href="./upbtc23.html" class="footer-link"
-                  >Dịch Vụ Up Bông Tai</a
-                >
-              </li>
-              <li><a href="./lienhe.html" class="footer-link">Liên Hệ</a></li>
-            </ul>
-          </div>
-          <!-- Social Media -->
-          <div class="col-md-4">
-            <h5 class="text-white fw-bold">Follow Us</h5>
-            <div class="d-flex justify-content-center justify-content-md-start">
-              <a href="#" class="btn btn-custom me-2"
-                ><i class="bi bi-facebook"></i
-              ></a>
-              <a href="#" class="btn btn-custom me-2"
-                ><i class="bi bi-twitter"></i
-              ></a>
-              <a href="#" class="btn btn-custom"
-                ><i class="bi bi-instagram"></i
-              ></a>
-            </div>
-          </div>
-        </div>
-        <hr class="text-white-50" />
-        <p class="text-center text-white mb-0">
-          &copy; Nro JUN MÃI ĐỈNH MÃI ĐỈNH LUÔN.
-        </p>
-      </div>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
