@@ -3,9 +3,144 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Combo Shop</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Comic Sans MS", cursive, sans-serif;
+        background: linear-gradient(135deg, #f78fb3, #f3d9a8);
+        overflow-x: hidden;
+        position: relative;
+      }
+
+      .combo-card {
+        transition: transform 0.3s, box-shadow 0.3s;
+      }
+
+      .combo-card:hover {
+        transform: scale(1.05);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      }
+
+      .btn-buy {
+        transition: background-color 0.3s, transform 0.3s;
+      }
+
+      .btn-buy:hover {
+        background-color: #218838;
+        transform: translateY(-2px);
+      }
+
+      h1 {
+        font-size: 3rem;
+        color: #34495e;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+      }
+
+      /* Snowfall effect */
+      .snowflake {
+        color: white;
+        font-size: 1.5rem;
+        position: absolute;
+        top: -10px;
+        animation: fall 10s linear infinite;
+      }
+
+      @keyframes fall {
+        0% {
+          transform: translateY(0) translateX(0);
+          opacity: 1;
+        }
+        100% {
+          transform: translateY(100vh) translateX(20px);
+          opacity: 0;
+        }
+      }
+
+      #snowflakes-container {
+        pointer-events: none;
+      }
+    </style>
   </head>
   <body>
-    <h1>all Combo</h1>
+    <!-- Snowflakes -->
+    <div id="snowflakes-container"></div>
+
+    <div class="container py-5">
+      <h1 class="text-center mb-4 animate__animated animate__fadeInDown">
+        Combo Shop
+      </h1>
+      <div class="row g-4">
+        <!-- Combo Items -->
+        <div
+          class="col-md-4 animate__animated animate__zoomIn"
+          style="animation-delay: 0.1s"
+        >
+          <div class="card combo-card">
+            <img
+              src="https://via.placeholder.com/300"
+              class="card-img-top"
+              alt="Combo Image"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Combo 1</h5>
+              <p class="card-text">Price: $19.99</p>
+              <button class="btn btn-success btn-buy">Buy Now</button>
+            </div>
+          </div>
+        </div>
+        <!-- Repeat Combo Items -->
+        <!-- You can copy and adjust the delay and content for each combo card -->
+        <div
+          class="col-md-4 animate__animated animate__zoomIn"
+          style="animation-delay: 0.2s"
+        >
+          <div class="card combo-card">
+            <img
+              src="https://via.placeholder.com/300"
+              class="card-img-top"
+              alt="Combo Image"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Combo 2</h5>
+              <p class="card-text">Price: $24.99</p>
+              <button class="btn btn-success btn-buy">Buy Now</button>
+            </div>
+          </div>
+        </div>
+        <!-- Add 20 combos by duplicating the structure -->
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      // Add click animations
+      document.querySelectorAll(".btn-buy").forEach((button) => {
+        button.addEventListener("click", () => {
+          alert("Thank you for your purchase!");
+        });
+      });
+
+      // Generate snowflakes
+      const snowflakesContainer = document.getElementById(
+        "snowflakes-container"
+      );
+      setInterval(() => {
+        const snowflake = document.createElement("div");
+        snowflake.className = "snowflake";
+        snowflake.style.left = Math.random() * 100 + "vw";
+        snowflake.style.animationDuration = 5 + Math.random() * 5 + "s";
+        snowflake.innerHTML = ["❄", "❅", "❆"][Math.floor(Math.random() * 3)];
+        snowflakesContainer.appendChild(snowflake);
+        setTimeout(() => snowflake.remove(), 10000);
+      }, 300);
+    </script>
   </body>
 </html>
