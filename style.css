@@ -752,4 +752,101 @@ strong {
     font-size: 1.5rem; /* Kích thước chữ cho desktop */
   }
 }
-/* */
+/* bxh*/
+/* Cấu trúc chung */
+body {
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+}
+
+.leaderboard {
+  max-width: 700px;
+  margin: 30px auto;
+  padding: 20px 30px;
+  background: linear-gradient(to bottom, #ffffff, #f1f1f1);
+  border: 2px solid #e0e0e0;
+  border-radius: 15px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.leaderboard h2 {
+  text-align: center;
+  color: #ff6347;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.leaderboard .summary {
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+/* Phần thưởng */
+.reward-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.reward-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  padding: 12px 15px;
+  border-radius: 8px;
+  border: 2px solid #e7e7e7;
+  transition: all 0.3s ease-in-out;
+}
+
+.reward-item:hover {
+  border-color: #ff6347;
+  background: #fff8f2;
+  transform: scale(1.02);
+}
+
+.rank {
+  font-size: 18px;
+  font-weight: bold;
+  color: #ff6347;
+}
+
+.reward {
+  font-size: 16px;
+  color: #333;
+}
+
+/* Màu riêng cho từng top */
+.top1 {
+  background: #fff4e6;
+  border-left: 8px solid #ffd700;
+}
+
+.top2 {
+  background: #f3f7ff;
+  border-left: 8px solid #c0c0c0;
+}
+
+.top3 {
+  background: #fef6f6;
+  border-left: 8px solid #cd7f32;
+}
+
+.top4-10 {
+  background: #f8f9fa;
+  border-left: 8px solid #5cb85c;
+}
+
+/* Footer */
+.leaderboard .footer {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 14px;
+  color: #555;
+  font-style: italic;
+}
